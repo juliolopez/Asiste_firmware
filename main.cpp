@@ -27,7 +27,6 @@ DigitalOut enable3v3(p30);
 int main(void)
 {
     enable3v3 = PWR_ON;
-
     wait(1);
 
     Leds *leds = new Leds();

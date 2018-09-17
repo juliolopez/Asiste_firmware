@@ -31,7 +31,7 @@ void Button::buttonCallback() {
 }
 
 void Button::debounceCallback() {
-/*    static uint8_t counterLows = 0;
+    static uint8_t counterLows = 0;
     static uint8_t counterEntries = 0;
 
     counterEntries++;
@@ -40,10 +40,9 @@ void Button::debounceCallback() {
         counterEntries = 0;
         ticker.detach();
         if(counterLows > 8){
-            counterLows = 0;*/
+            counterLows = 0;
             tap();
-/*        }
+        }
         counterLows = 0;
-    }*/
-
+    }
 }
